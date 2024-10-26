@@ -1,0 +1,243 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*head section*/
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #3b58eb;
+    text-shadow: 
+        0 0 5px rgba(73, 105, 185, 0.7), 
+        0 0 10px rgba(71, 110, 183, 0.7);
+}
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: #e63933;
+    text-shadow: 0 0 10px #e63532;
+}
+
+/* into*/
+.introduction {
+    background: url('https://t3.ftcdn.net/jpg/06/59/60/16/360_F_659601641_dms0A1wuIBjQwsGFZpiLpzBQRpyG59nY.jpg') no-repeat center center/cover;
+    opacity:0.82; 
+    height:300px;
+    text-align: center;
+    padding: 55px;
+    margin: 0px auto; 
+    max-width: 1300px; 
+}
+
+.introduction h2 {
+    margin-bottom: 15px;
+    color: #00d0ff;
+    text-shadow: #729cb7;
+    font-size: 2.0em;
+}
+/*player profile*/
+.player-grid {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px; 
+}
+
+.player-grid h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #3b301f, 0 0 10px #413727; 
+}
+
+.player-grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.player-card {
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(234, 205, 163, 0.955);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.player-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 30px rgba(234, 205, 163, 1); 
+}
+
+.player-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.player-card h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 10px 0;
+    text-shadow: 0 0 5px #555050, 0 0 10px #5f5a5a; 
+}
+
+.player-card p {
+    font-size: 1em;
+    color: #ccc;
+    padding: 0 10px 10px 10px;
+}
+
+/* map section*/
+#map {
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+#map-container {
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#map h2 {
+    text-align: center; 
+    text-shadow: 0 0 5px #1e1d1d, 0 0 10px #252324; 
+}
+
+/* matches*/
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+}
+
+.video-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(247, 117, 3, 0.966);
+    transition: transform 0.3s;
+    text-align: center; 
+}
+
+.video-card:hover {
+    transform: scale(1.05); 
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px; 
+}
+
+/* fan zone */
+#fan-zone {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#fan-zone h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(254, 107, 2, 0.5);
+}
+
+#fan-zone label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#fan-zone select {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #ffffff;
+}
+
+#fan-zone button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #00d0ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#fan-zone button:hover {
+    background-color: #00b3cc;
+    transform: scale(1.05);
+}
+
+#fan-zone #result {
+    margin-top: 20px;
+    color: #83de83;
+}
+
+
+/*footer*/
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
